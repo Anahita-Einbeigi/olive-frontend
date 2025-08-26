@@ -163,6 +163,8 @@
 import { useState, useEffect } from 'react';
 import { fetchEntries } from '../lib/contentfulClient'; 
 import ScrollingBanner from "../components/ScrollingBanner";
+import Image from "next/image";
+import logo1 from "../assets/images/logo.png";
 
 type Place = {
   id: string;
@@ -223,8 +225,8 @@ export default function Contact() {
         <div className="row align-items-center">
           <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
             <div className="contact-image-wrapper">
-              <img
-                src="/images/logo.png"
+              <Image
+                src={logo1}
                 alt="Contact Image"
                 className="img-fluid rounded-circle shadow-lg object-cover"
                 style={{ width: '400px', height: 'auto', objectFit: 'cover' }}

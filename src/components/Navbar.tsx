@@ -165,6 +165,8 @@
 
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
+import logo6 from '../assets/images/bl2.jpg';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -184,8 +186,8 @@ export default function Navbar() {
     <nav className="navbar-navbarCustom navbar navbar-expand-md shadow-sm fixed-top">
       <div className="container">
         <Link href="/" className="navbar-brand">
-          <img
-            src="/images/bl2.jpg"
+          <Image
+            src={logo6}
             alt="BRILINO Logo"
             width={120}
             height={60}

@@ -70,6 +70,11 @@
 'use client';
 import React from "react";
 import ScrollingBanner from "../components/ScrollingBanner";
+import Link from "next/link";
+import Image from "next/image";
+import logo3 from "../assets/images/01.jpg";
+import logo4 from "../assets/images/l2.jpg";
+import logo5 from "../assets/images/L3.jpg";
 
 const Home: React.FC = () => {
   return (
@@ -83,9 +88,10 @@ const Home: React.FC = () => {
             Varje produkt är omsorgsfullt tillverkad med kärlek och passion, perfekt för både vardag och fest. 
             Låt oss inspirera dina måltider med naturliga och högkvalitativa delikatesser.
           </p>
-          <a href="/products">
+          <Link href="/products">
             <button className="home-primaryBtn">Utforska Produkter</button>
-          </a>
+          </Link>
+          
         </div>
       </section>
 
@@ -100,8 +106,8 @@ const Home: React.FC = () => {
 
         <aside className="home-collage">
           <div className="home-collageGrid">
-            <img src="/images/01.jpg" alt="c1" style={{ width: "100%", height: "auto" }} />
-            <img src="/images/l2.jpg" alt="c2" style={{ width: "100%", height: "auto" }} />
+            <Image src={logo3} alt="c1" style={{ width: "100%", height: "auto" }} />
+            <Image src={logo4} alt="c2" style={{ width: "100%", height: "auto" }} />
           </div>
         </aside>
       </section>
@@ -110,16 +116,16 @@ const Home: React.FC = () => {
 
       <section className="home-feature">
         <div className="home-featureImage">
-          <img src="/images/L3.jpg" alt="feature" style={{ width: "100%", height: "auto" }} />
+          <Image src={logo5} alt="feature" style={{ width: "100%", height: "auto" }} />
         </div>
         <div className="home-featureContent">
           <h3>Smaker från naturen direkt till <span className="home-big">ditt bord.</span></h3>
           <p>
             Våra oliver plockas för hand och våra ostar tillverkas med kärlek och tradition. Varje produkt är noggrant utvald för att ge dig en autentisk smakupplevelse. Perfekt för allt från vardagsmåltider till festliga tillfällen – upptäck våra utsökta kombinationer som höjer varje stund.
           </p>
-          <a href="/products">
+          <Link href="/products">
             <button className="home-primaryBtn2">Utforska Produkter</button>
-          </a>
+          </Link>          
         </div>
       </section>
 

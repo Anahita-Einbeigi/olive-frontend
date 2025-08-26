@@ -90,6 +90,9 @@
 
 'use client';
 import React from "react";
+import Image from "next/image";
+import logo from "../assets/images/brilino.jpg";
+import Link from "next/link";
 
 const About: React.FC = () => {
   return (
@@ -155,8 +158,8 @@ const About: React.FC = () => {
       {/* Preview Section */}
       <section className="about-preview">
         <div className="about-previewMockup">
-          <img
-            src="/images/brilino.jpg"
+          <Image
+            src= {logo}
             alt="LOGO"
             style={{ width: "180px", height: "180px" }}
           />
@@ -169,9 +172,9 @@ const About: React.FC = () => {
             information om våra evenemang och platser hittar du under Kontakt –
             vi ser fram emot att träffa dig!
           </p>
-          <a href="/contact/" className="about-Btn">
-            Upptäck våra platser
-          </a>
+          <Link href="/contact">
+            <button className="about-Btn">Upptäck våra platser</button>
+          </Link>
         </div>
       </section>
     </main>
