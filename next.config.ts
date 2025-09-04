@@ -14,7 +14,7 @@
 import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // output: 'export',
   images: {
     domains: ['images.ctfassets.net'],
     unoptimized: true, 

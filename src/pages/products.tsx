@@ -62,5 +62,6 @@ export async function getStaticProps() {
       products: entries.items,
       sweetProducts: sweetEntries.items,
     },
+    revalidate: 60,
   };
-}
+} 
