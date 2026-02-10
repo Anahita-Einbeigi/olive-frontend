@@ -7,9 +7,12 @@ export default function Blogg() {
   const linkedInPosts: string[] = [
     // "https://www.linkedin.com/embed/feed/update/urn:li:share:7337797078430932992?collapsed=1",
     "https://www.linkedin.com/embed/feed/update/urn:li:share:7365779930086912001?collapsed=1" ,
-    "https://www.linkedin.com/embed/feed/update/urn:li:share:7365784343232798722?collapsed=1"
-
-  ];
+    "https://www.linkedin.com/embed/feed/update/urn:li:share:7365784343232798722?collapsed=1",
+    "https://www.linkedin.com/embed/feed/update/urn:li:share:7426972183437918208?collapsed=1" , 
+    "https://www.linkedin.com/embed/feed/update/urn:li:share:7426969869683834881?collapsed=1",
+    "https://www.linkedin.com/embed/feed/update/urn:li:share:7426969703694139392?collapsed=1",
+    "https://www.linkedin.com/embed/feed/update/urn:li:share:7426963963109634048?collapsed=1"
+  ]
 
   return (
     <div
